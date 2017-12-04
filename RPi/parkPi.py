@@ -1,7 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
-n = 1
+globalDistance = 8
+
 TRIGS = [23,16,20]
 ECHOS = [24,19,26]
 # TRIG1 = 23
@@ -35,14 +36,15 @@ def callSensor(TRIG, ECHO, sensor):
 	distance = pulse_duration * 17150
 
 	distance = round(distance, 2)
+	
+	if (distance < globalDistance) : print "Tem carro"
+	else : print "Nao tem carro"
 
 	print "A distancia do sensor ", sensor , "eh: ",distance, " cm"
 
-	print n
 	
 print "Mensurando a Distancia"
 
 while True:
 	for i in range(len(TRIGS)):
 		callSensor(TRIGS[i],ECHOS[i],i+1)
-
