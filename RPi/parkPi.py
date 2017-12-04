@@ -1,36 +1,28 @@
 import RPi.GPIO as GPIO
 import time
-GPIO.setmode(GPIO.BCM)
 
-TRIG = 23
-ECHO = 24
-
+n = 1
+TRIGS = [23,16,20]
+ECHOS = [24,19,26]
 # TRIG1 = 23
 # ECHO1 = 24
-# TRIG2 = 23
-# ECHO2 = 24
-# TRIG3 = 23
-# ECHO3 = 24
+# TRIG2 = 16
+# ECHO2 = 19
+# TRIG3 = 20
+# ECHO3 = 26
 
-
-# n=1
-GPIO.cleanup()
-print "Mensurando a Distancia"
-while True:
-
-
+def callSensor(TRIG, ECHO, sensor):
+	GPIO.setmode(GPIO.BCM)
 	GPIO.setup(TRIG,GPIO.OUT)
 	GPIO.setup(ECHO,GPIO.IN)
 
 	GPIO.output(TRIG,False)
 	print "Aguardando o Sensor Estabilizar"
-	time.sleep(2)
-
+	time.sleep(1)
 
 	GPIO.output(TRIG, True)
 	time.sleep(0.00001)
 	GPIO.output(TRIG, False)
-
 
 	while GPIO.input(ECHO)==0:
 		 pulse_start = time.time()
@@ -44,7 +36,13 @@ while True:
 
 	distance = round(distance, 2)
 
-	print "A distancia eh: ",distance, " cm"
-	time.sleep(0.5)
+	print "A distancia do sensor ", sensor , "eh: ",distance, " cm"
 
+	print n
+	
+print "Mensurando a Distancia"
+
+while True:
+	for i in range(len(TRIGS)):
+		callSensor(TRIGS[i],ECHOS[i],i+1)
 
