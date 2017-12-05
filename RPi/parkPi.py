@@ -1,6 +1,6 @@
 import RPi.GPIO as GPIO
 import time
-import json
+#import json
 from firebase import firebase
 firebase = firebase.FirebaseApplication('https://parkingpi-910f3.firebaseio.com/', None)
 
@@ -44,7 +44,7 @@ def callSensor(TRIG, ECHO, sensor):
 	else : n = 0
 	result = firebase.get('/Vagas',None) #TODO json
 	#result = firebase.put('/Vagas', {'id',sensor,}, {'status', n}) #TODO json
-	path = '/vagas/' + str(sensor)
+	path = '/Vagas/' + str(sensor)
 	result = firebase.put(path, 'status', n)
 	print result
 
