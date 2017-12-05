@@ -1,7 +1,10 @@
 import RPi.GPIO as GPIO
 import time
+import json
+from firebase import firebase
+firebase = firebase.FirebaseApplication('https://parkingpi-910f3.firebaseio.com/', None)
 
-globalDistance = 8
+globalDistance = 8 #Distancia minima para determinar se a vaga esta livre
 
 TRIGS = [23,16,20]
 ECHOS = [24,19,26]
@@ -37,10 +40,13 @@ def callSensor(TRIG, ECHO, sensor):
 
 	distance = round(distance, 2)
 	
-	if (distance < globalDistance) : print "Tem carro"
-	else : print "Nao tem carro"
-
-	print "A distancia do sensor ", sensor , "eh: ",distance, " cm"
+	if (distance < globalDistance) : n = 1
+	else : n = 0
+	result = firebase.get('/Vagas',None) #TODO json
+	#result = firebase.put('/Vagas', {'id',sensor,}, {'status', n}) #TODO json
+	path = '/vagas/' + str(sensor)
+	result = firebase.put(path, 'status', n)
+	print result
 
 	
 print "Mensurando a Distancia"
