@@ -51,7 +51,7 @@ Portanto, uma vez que o objetivo do estacionamento é atender o público que uti
 
 Requisito de software e funcionalidades detalha as necessidades dos usuários e clientes, exigências do negócio, desejos da empresa, solicitação da empresa para o desenvolvimento do controle de vagas para estacionamento. O software deverá atender estas necessidades, exigências, desejos e solicitações, e materializar isso em um aplicativo. O requisito de software para controle de vagas é dividido em três partes, regra de negócio, requisitos funcionais e requisitos não funcionais.
 
-<img src="/imgs/">
+<center><img src="/imgs/requisitosoftware.png"></center>
 
 3.1 REGRAS DE NEGÓCIO
 
