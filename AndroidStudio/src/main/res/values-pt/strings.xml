@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vagasDisponiveisTitleTextView">Disponiveis</string>
+    <string name="vagasOcupadasTitleTextView">Ocupadas</string>
+    <string name="idVagaEditText">idVagaEditText</string>
+    <string name="statusVagaEditText">statusVagaEditText</string>
+    <string name="editVacancyButton">Editar vaga</string>
+    <string name="insertTitleTextView">Inserir nova vaga</string>
+    <string name="idVacancyEditText">id</string>
+    <string name="statusVacancyCheckBox">Ocupado?</string>
+    <string name="nameVacancyEditText">Nome:</string>
+    <string name="parkingVacancyEditText">Estacionamento:</string>
+    <string name="insertVacancyItemButton">Inserir</string>
+    <string name="parkingTitleTextView">Vagas disponiveis</string>
+    <string name="vacancy1Button">Vaga 1</string>
+    <string name="vacancy2Button">Vaga 2</string>
+    <string name="vacancy3Button">Vaga 3</string>
+    <string name="vacancy4Button">Vaga 4</string>
+    <string name="vacancy5Button">Vaga 5</string>
+    <string name="vacancy6Button">Vaga 6</string>
+    <string name="availableVacanciesTitleTextView">Disponíveis</string>
+    <string name="occupiedVacanciesTitleTextView">Ocupadas</string>
+    <string name="listViewTitleTextView">Vagas por estacionamento</string>
+    <string name="editVacancyItemButton">Editar</string>
+    <string name="insertParkingTitleTextView">Inserir novo estacionamento</string>
+    <string name="nameParkingEditText">Nome:</string>
+    <string name="addressParkingEditText">Endereço:</string>
+    <string name="hourOpeningParkingEditText">Abertura</string>
+    <string name="hourClosureParkingEditText">Fechamento</string>
+    <string name="returnToPrincipalButton">Voltar</string>
+    <string name="insertButton">Inserir</string>
+    <string name="parkingsSpinnerListButton">Filtrar</string>
+    <string name="insertUserTitleTextView">Inserir novo usuario</string>
+    <string name="nameUserEditText">Nome:</string>
+    <string name="profileUserEditText">Perfil:</string>
+    <string name="passUserEditText">Senha atual:</string>
+    <string name="userEditText">Usuario:</string>
+    <string name="passEditText">Senha:</string>
+    <string name="okLoginButton">okLoginButton</string>
+    <string name="acessarLoginButton">Entrar</string>
+    <string name="editPassUserButton">Editar minha senha</string>
+    <string name="editUserItemButton">Editar</string>
+    <string name="newPassUserEditText">Nova senha:</string>
+    <string name="authenticationTitleTextView">Autenticação</string>
+</resources>

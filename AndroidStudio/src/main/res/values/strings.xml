@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name" translatable="false">Parking Pi</string>
+    <string name="vagasDisponiveisTitleTextView">Available</string>
+    <string name="vagasOcupadasTitleTextView">Occupied</string>
+    <string name="idVagaEditText">idVagaEditText</string>
+    <string name="statusVagaEditText">statusVagaEditText</string>
+    <string name="editVacancyButton">Edit vacancy</string>
+    <string name="insertTitleTextView">Insert a new vacancy</string>
+    <string name="idVacancyEditText">id</string>
+    <string name="statusVacancyCheckBox">Occupied?</string>
+    <string name="nameVacancyEditText">Name:</string>
+    <string name="parkingVacancyEditText">Parking:</string>
+    <string name="insertVacancyItemButton">Insert</string>
+    <string name="parkingTitleTextView">Available vacancies</string>
+    <string name="vacancy1Button">Vacancy 1</string>
+    <string name="vacancy2Button">Vacancy 2</string>
+    <string name="vacancy3Button">Vacancy 3</string>
+    <string name="vacancy4Button">Vacancy 4</string>
+    <string name="vacancy5Button">Vacancy 5</string>
+    <string name="vacancy6Button">Vacancy 6</string>
+    <string name="availableVacanciesTitleTextView">Available</string>
+    <string name="occupiedVacanciesTitleTextView">Occupied</string>
+    <string name="listViewTitleTextView">Parking spaces</string>
+    <string name="editVacancyItemButton">Edit</string>
+    <string name="insertParkingTitleTextView">Insert a new parking</string>
+    <string name="nameParkingEditText">Name:</string>
+    <string name="addressParkingEditText">Address:</string>
+    <string name="recordParkingEditText" translatable="false">CNPJ:</string>
+    <string name="hourOpeningParkingEditText">Opening</string>
+    <string name="hourClosureParkingEditText">Closure</string>
+    <string name="returnToPrincipalButton">Return</string>
+    <string name="insertButton">Insert</string>
+    <string name="parkingsSpinnerListButton">Filter</string>
+    <string name="insertUserTitleTextView">Insert a new user</string>
+    <string name="nameUserEditText">Name:</string>
+    <string name="profileUserEditText">Profile:</string>
+    <string name="passUserEditText">Old password:</string>
+    <string name="userEditText">User:</string>
+    <string name="passEditText">Password:</string>
+    <string name="okLoginButton">okLoginButton</string>
+    <string name="acessarLoginButton">Entry</string>
+    <string name="editPassUserButton">Edit my password</string>
+    <string name="editUserItemButton">Edit</string>
+    <string name="newPassUserEditText">New password</string>
+    <string name="authenticationTitleTextView">Authentication</string>
+</resources>
